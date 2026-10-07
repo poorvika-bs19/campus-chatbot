@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RIT Hassan — Create Account</title>
+<link rel="icon" type="image/jpeg" href="{{ url_for('static', filename='logo.jpeg') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1C2541; --navy-deep:#141A30; --navy-mid:#253256;
+  --cream:#F7F3EA; --gold:#D4A24C; --mint:#4FBDAA;
+  --slate:#5B6478; --ink:#1A1F33; --border:#DDD8CC;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{height:100%;}
+body{font-family:'Inter',system-ui,sans-serif;min-height:100vh;display:flex;background:var(--cream);-webkit-font-smoothing:antialiased;}
+
+/* ── Left panel ─────────────────────────────────────────── */
+.panel-left{
+  flex:1.1;
+  background:linear-gradient(155deg,var(--navy) 0%,var(--navy-deep) 100%);
+  color:#fff;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:64px 60px;position:relative;overflow:hidden;
+}
+.panel-left::before{
+  content:"";position:absolute;
+  width:480px;height:480px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.05);
+  top:-160px;right:-180px;pointer-events:none;
+}
+.panel-left::after{
+  content:"";position:absolute;
+  width:280px;height:280px;border-radius:50%;
+  border:1px solid rgba(79,189,170,.08);
+  bottom:-80px;left:-60px;pointer-events:none;
+}
+.pl-logo{
+  width:64px;height:64px;object-fit:cover;border-radius:50%;
+  border:2px solid rgba(79,189,170,.45);
+  margin-bottom:28px;display:block;
+}
+.pl-eyebrow{
+  font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--mint);font-weight:700;margin-bottom:16px;
+}
+.pl-heading{
+  font-family:'Fraunces',serif;
+  font-size:40px;font-weight:600;line-height:1.18;color:#fff;
+  margin-bottom:20px;max-width:320px;
+}
+.pl-tagline{
+  max-width:320px;color:rgba(255,255,255,.55);
+  font-size:14px;line-height:1.65;
+}
+.pl-features{display:flex;flex-direction:column;gap:10px;margin-top:28px;}
+.pl-feat{display:flex;align-items:center;gap:10px;font-size:13.5px;color:rgba(255,255,255,.75);}
+.pl-feat-icon{
+  width:30px;height:30px;border-radius:8px;
+  background:rgba(79,189,170,.15);border:1px solid rgba(79,189,170,.25);
+  display:flex;align-items:center;justify-content:center;
+  font-size:15px;flex-shrink:0;
+}
+
+/* ── Right panel ────────────────────────────────────────── */
+.panel-right{
+  flex:1;display:flex;align-items:center;justify-content:center;
+  padding:40px 48px;
+}
+.card{width:100%;max-width:380px;}
+.card-title{
+  font-family:'Fraunces',serif;font-size:26px;font-weight:600;
+  color:var(--ink);margin-bottom:6px;
+}
+.card-sub{color:var(--slate);font-size:14px;margin-bottom:28px;}
+
+.error-box{
+  background:#FDEDEC;border:1px solid #F5C2BE;color:#922B21;
+  padding:10px 14px;border-radius:8px;font-size:13px;margin-bottom:18px;
+}
+.field{margin-bottom:16px;}
+.field label{
+  display:block;font-size:12.5px;font-weight:600;
+  color:var(--ink);margin-bottom:6px;
+}
+.field input{
+  width:100%;padding:12px 14px;
+  border:1.5px solid var(--border);border-radius:9px;
+  font-family:'Inter',sans-serif;font-size:14px;
+  background:#fff;color:var(--ink);outline:none;
+  transition:border-color .18s,box-shadow .18s;
+}
+.field input:focus{
+  border-color:var(--mint);
+  box-shadow:0 0 0 3px rgba(79,189,170,.12);
+}
+.btn-primary{
+  width:100%;padding:13px;border:none;border-radius:9px;
+  background:var(--navy);color:#fff;
+  font-family:'Inter',sans-serif;font-size:15px;font-weight:600;
+  cursor:pointer;transition:background .18s;
+  letter-spacing:-.01em;
+}
+.btn-primary:hover{background:var(--navy-mid);}
+.switch{
+  text-align:center;margin-top:20px;
+  font-size:13.5px;color:var(--slate);
+}
+.switch a{color:var(--mint);font-weight:600;text-decoration:none;}
+.switch a:hover{text-decoration:underline;}
+.terms{
+  font-size:11.5px;color:var(--slate);text-align:center;
+  margin-top:14px;line-height:1.5;
+}
+
+@media(max-width:820px){
+  body{flex-direction:column;}
+  .panel-left{padding:32px 24px;min-height:auto;}
+  .pl-heading{font-size:28px;}
+  .pl-features{display:none;}
+  .panel-right{padding:24px 20px;}
+}
+</style>
+</head>
+<body>
+
+<!-- Left panel -->
+<div class="panel-left">
+  <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="RIT Hassan" class="pl-logo">
+  <div class="pl-eyebrow">Rajeev Institute of Technology, Hassan</div>
+  <div class="pl-heading">Create your account to get started.</div>
+  <p class="pl-tagline">Ask campus questions in English, Kannada-English, or Hindi-English and get instant verified answers.</p>
+  <div class="pl-features">
+    <div class="pl-feat"><span class="pl-feat-icon">🎓</span>Admissions &amp; Seat information</div>
+    <div class="pl-feat"><span class="pl-feat-icon">🏠</span>Hostel fees &amp; facilities</div>
+    <div class="pl-feat"><span class="pl-feat-icon">🚌</span>Bus routes &amp; timings</div>
+    <div class="pl-feat"><span class="pl-feat-icon">💼</span>Placement statistics</div>
+    <div class="pl-feat"><span class="pl-feat-icon">🎁</span>Scholarship information</div>
+  </div>
+</div>
+
+<!-- Right panel -->
+<div class="panel-right">
+  <div class="card">
+    <h1 class="card-title">Create account</h1>
+    <p class="card-sub">Sign up to access your campus support assistant.</p>
+
+    {% if error %}
+    <div class="error-box">{{ error }}</div>
+    {% endif %}
+
+    <form action="/signup" method="POST" novalidate>
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email"
+               placeholder="yourname@gmail.com"
+               autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"
+               placeholder="Create a password (min 6 characters)"
+               autocomplete="new-password" minlength="6" required>
+      </div>
+      <button type="submit" class="btn-primary">Create account</button>
+    </form>
+
+    <p class="switch">Already have an account? <a href="/">Sign in</a></p>
+    <p class="terms">Your information is used only for accessing this campus assistant.</p>
+  </div>
+</div>
+
+</body>
+</html>

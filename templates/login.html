@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RIT Hassan — Campus Support Assistant</title>
+<link rel="icon" type="image/jpeg" href="{{ url_for('static', filename='logo.jpeg') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1C2541; --navy-deep:#141A30; --navy-mid:#253256;
+  --cream:#F7F3EA; --gold:#D4A24C; --mint:#4FBDAA;
+  --slate:#5B6478; --ink:#1A1F33; --border:#DDD8CC;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{height:100%;}
+body{font-family:'Inter',system-ui,sans-serif;min-height:100vh;display:flex;background:var(--cream);-webkit-font-smoothing:antialiased;}
+
+/* ── Splash ─────────────────────────────────────────────── */
+#splash{
+  position:fixed;inset:0;background:var(--navy);
+  display:flex;align-items:center;justify-content:center;
+  z-index:9999;transition:opacity .6s ease;
+}
+#splash img{
+  width:180px;height:180px;object-fit:cover;border-radius:50%;
+  border:3px solid rgba(79,189,170,.5);
+  animation:splashPop 1.4s ease-in-out;
+}
+@keyframes splashPop{
+  0%{opacity:0;transform:scale(.8);}
+  60%{opacity:1;transform:scale(1.04);}
+  100%{opacity:1;transform:scale(1);}
+}
+
+/* ── Left panel ─────────────────────────────────────────── */
+.panel-left{
+  flex:1.1;
+  background:linear-gradient(155deg,var(--navy) 0%,var(--navy-deep) 100%);
+  color:#fff;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:64px 60px;position:relative;overflow:hidden;
+}
+.panel-left::before{
+  content:"";position:absolute;
+  width:480px;height:480px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.05);
+  top:-160px;right:-180px;pointer-events:none;
+}
+.panel-left::after{
+  content:"";position:absolute;
+  width:280px;height:280px;border-radius:50%;
+  border:1px solid rgba(79,189,170,.08);
+  bottom:-80px;left:-60px;pointer-events:none;
+}
+.pl-logo{
+  width:64px;height:64px;object-fit:cover;border-radius:50%;
+  border:2px solid rgba(79,189,170,.45);
+  margin-bottom:28px;display:block;
+}
+.pl-eyebrow{
+  font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--mint);font-weight:700;margin-bottom:16px;
+}
+.pl-greeting{
+  font-family:'Fraunces',serif;
+  font-size:58px;font-weight:600;line-height:1.05;
+  min-height:124px;display:flex;align-items:center;
+  color:#fff;
+}
+.pl-lang{
+  font-size:13px;color:var(--gold);font-weight:600;
+  letter-spacing:.07em;margin-top:8px;
+}
+.pl-dots{display:flex;gap:7px;margin-top:24px;}
+.pl-dots span{
+  width:7px;height:7px;border-radius:50%;
+  background:rgba(255,255,255,.2);transition:background .3s;
+}
+.pl-dots span.active{background:var(--mint);}
+.pl-tagline{
+  margin-top:36px;max-width:340px;
+  color:rgba(255,255,255,.55);font-size:14px;line-height:1.65;
+}
+
+/* ── Right panel ────────────────────────────────────────── */
+.panel-right{
+  flex:1;display:flex;align-items:center;justify-content:center;
+  padding:40px 48px;
+}
+.card{width:100%;max-width:380px;}
+.card-title{
+  font-family:'Fraunces',serif;font-size:28px;font-weight:600;
+  color:var(--ink);margin-bottom:6px;
+}
+.card-sub{color:var(--slate);font-size:14px;margin-bottom:28px;}
+
+.error-box{
+  background:#FDEDEC;border:1px solid #F5C2BE;color:#922B21;
+  padding:10px 14px;border-radius:8px;font-size:13px;margin-bottom:18px;
+}
+.field{margin-bottom:16px;}
+.field label{
+  display:block;font-size:12.5px;font-weight:600;
+  color:var(--ink);margin-bottom:6px;
+}
+.field input{
+  width:100%;padding:12px 14px;
+  border:1.5px solid var(--border);border-radius:9px;
+  font-family:'Inter',sans-serif;font-size:14px;
+  background:#fff;color:var(--ink);outline:none;
+  transition:border-color .18s,box-shadow .18s;
+}
+.field input:focus{
+  border-color:var(--mint);
+  box-shadow:0 0 0 3px rgba(79,189,170,.12);
+}
+.btn-primary{
+  width:100%;padding:13px;border:none;border-radius:9px;
+  background:var(--navy);color:#fff;
+  font-family:'Inter',sans-serif;font-size:15px;font-weight:600;
+  cursor:pointer;transition:background .18s;
+  letter-spacing:-.01em;
+}
+.btn-primary:hover{background:var(--navy-mid);}
+.switch{
+  text-align:center;margin-top:20px;
+  font-size:13.5px;color:var(--slate);
+}
+.switch a{color:var(--mint);font-weight:600;text-decoration:none;}
+.switch a:hover{text-decoration:underline;}
+
+@media(max-width:820px){
+  body{flex-direction:column;}
+  .panel-left{padding:36px 28px;min-height:220px;}
+  .pl-greeting{font-size:40px;min-height:88px;}
+  .pl-tagline{display:none;}
+  .panel-right{padding:28px 24px;}
+}
+</style>
+</head>
+<body>
+
+<!-- Splash -->
+<div id="splash">
+  <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="RIT Hassan">
+</div>
+
+<!-- Left panel -->
+<div class="panel-left">
+  <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="RIT Hassan" class="pl-logo">
+  <div class="pl-eyebrow">Rajeev Institute of Technology, Hassan</div>
+  <div class="pl-greeting" id="greeting">Hello.</div>
+  <div class="pl-lang" id="greetingLang">ENGLISH</div>
+  <div class="pl-dots" id="dots">
+    <span class="active"></span><span></span><span></span>
+  </div>
+  <p class="pl-tagline">
+    Your AI-powered campus assistant — get instant answers about
+    admissions, hostel, faculty, transport, placements and more.
+    Ask in English, Kannada-English, or Hindi-English.
+  </p>
+</div>
+
+<!-- Right panel -->
+<div class="panel-right">
+  <div class="card">
+    <h1 class="card-title">Welcome back</h1>
+    <p class="card-sub">Sign in to access your campus assistant.</p>
+
+    {% if error %}
+    <div class="error-box">{{ error }}</div>
+    {% endif %}
+
+    <form action="/login" method="POST" novalidate>
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email"
+               placeholder="yourname@gmail.com"
+               autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"
+               placeholder="Enter your password"
+               autocomplete="current-password" required>
+      </div>
+  
+      <button type="submit" class="btn-primary">Sign in</button>
+    </form>
+
+    <p class="switch">New here? <a href="/signup">Create an account</a></p>
+  </div>
+</div>
+
+<script>
+/* ── Greeting rotator ─────────────────────────────────────── */
+const greetings = [
+  { text: "Hello.",      lang: "ENGLISH"  },
+  { text: "ನಮಸ್ಕಾರ.",  lang: "KANNADA"  },
+  { text: "नमस्ते।",    lang: "HINDI"    },
+];
+let gi = 0;
+const greetEl = document.getElementById('greeting');
+const langEl  = document.getElementById('greetingLang');
+const dotsEl  = document.getElementById('dots').children;
+
+setInterval(() => {
+  gi = (gi + 1) % greetings.length;
+  greetEl.style.opacity = '0';
+  langEl.style.opacity  = '0';
+  setTimeout(() => {
+    greetEl.textContent = greetings[gi].text;
+    langEl.textContent  = greetings[gi].lang;
+    greetEl.style.transition = 'opacity .4s';
+    langEl.style.transition  = 'opacity .4s';
+    greetEl.style.opacity    = '1';
+    langEl.style.opacity     = '1';
+    for (let d = 0; d < dotsEl.length; d++)
+      dotsEl[d].classList.toggle('active', d === gi);
+  }, 380);
+}, 2600);
+
+/* ── Splash dismiss ───────────────────────────────────────── */
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const s = document.getElementById('splash');
+    s.style.opacity = '0';
+    setTimeout(() => s.style.display = 'none', 620);
+  }, 2200);
+});
+</script>
+
+</body>
+</html>
