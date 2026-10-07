@@ -1,0 +1,1089 @@
+[
+  {
+    "rel_path": "faculty\\computerscience Faculty List.pdf",
+    "doc_label": "CSE Faculty List (PDF)",
+    "file_type": "PDF",
+    "expected": "READABLE",
+    "full_path": "C:\\Users\\Admin\\Downloads\\campus-chatbot\\data\\faculty\\computerscience Faculty List.pdf",
+    "exists": true,
+    "status": "OK",
+    "error": null,
+    "summary": {
+      "total_pages": 1,
+      "non_empty_pages": 1,
+      "total_chars": 1216
+    },
+    "pages": [
+      {
+        "page_number": 1,
+        "char_count": 1216,
+        "text": "CSE Faculty List \nSL \nNO. Name of the Faculty Designation Remarks \n1.  Dr. H N Prakash Professor -------------------- \n2.  Dr. H.S. Mohana Professor -------------------- \n3.  Dr. Suresha D Professor & Head -------------------- \n4.  Dr. S A Quadri Professor \n1st year- C Program(3C)  \n1st year- C Program(3C) \n5.  Dr. Ramesh B Professor -------------------- \n6.  Mr. Dinesh S Asst. Professor -------------------- \n7.  Mr. Anil Kumar K N Asst. Professor -------------------- \n8.  Mrs. Kannika Lakshmi D G Asst. Professor -------------------- \n9.  Mrs. Shashikala M K Asst. Professor -------------------- \n10.  Mrs. Ruksar Parveen Asst. Professor 1st year- C Program Lab Batch-2 \n(1C)    \n11.  Ms. Usha C D Asst. Professor -------------------- \n12.  Mr. Vishnu Navali Asst. Professor -------------------- \n13.  Ms. Shravya M S Asst. Professor \n1st year- C Program Lab Batch-3(1C)  \n1st year- C Program Lab Batch-4 \n(1C)    \n14.  Mr. Rohith K Asst. Professor -------------------- \n15.  Ms. Kusuma H M Asst. Professor \n \n-------------------- \n16.  Ms. Prakruthi H V Asst. Professor -------------------- \n17.  Ms. Shalini H B Asst. Professor -------------------- \n18.  Mrs. Archana J B Asst. Professor --------------------"
+      }
+    ],
+    "paragraphs": [],
+    "table_rows": []
+  },
+  {
+    "rel_path": "fees\\SCHOLARSHIP.docx",
+    "doc_label": "Scholarship Details (DOCX)",
+    "file_type": "DOCX",
+    "expected": "READABLE",
+    "full_path": "C:\\Users\\Admin\\Downloads\\campus-chatbot\\data\\fees\\SCHOLARSHIP.docx",
+    "exists": true,
+    "status": "OK",
+    "error": null,
+    "summary": {
+      "total_paragraphs": 121,
+      "non_empty_paragraphs": 80,
+      "total_table_rows": 0,
+      "total_chars": 3701,
+      "headings_found": []
+    },
+    "pages": [],
+    "paragraphs": [
+      {
+        "para_index": 0,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "SCHOLARSHIP",
+        "char_count": 11
+      },
+      {
+        "para_index": 1,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "State Scholarship Portal (SSP)",
+        "char_count": 30
+      },
+      {
+        "para_index": 2,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "SSP Scholarship is an initiative taken by the Government of Karnataka to provide financial aid to engineering students. It offers pre-matric and    post-matric scholarships to SC/ ST, Backward Classes students.",
+        "char_count": 210
+      },
+      {
+        "para_index": 3,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 4,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 5,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 6,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Scholarship for Engineering Students",
+        "char_count": 36
+      },
+      {
+        "para_index": 7,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Eligibility:",
+        "char_count": 12
+      },
+      {
+        "para_index": 8,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 9,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Karnataka students studying engineering in Karnataka.",
+        "char_count": 53
+      },
+      {
+        "para_index": 10,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "The candidate must score at least 50% in their previous examinations.",
+        "char_count": 69
+      },
+      {
+        "para_index": 11,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply? : SSP portal: ONLINE",
+        "char_count": 34
+      },
+      {
+        "para_index": 12,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 13,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 14,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "For All Category OBC Students: (Offered by Backward Classes Welfare Department)",
+        "char_count": 79
+      },
+      {
+        "para_index": 15,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Eligibility: The annual family income must not exceed 1.5 lacs.",
+        "char_count": 63
+      },
+      {
+        "para_index": 16,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get?: Yearly Rs.19,200 only",
+        "char_count": 39
+      },
+      {
+        "para_index": 17,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 18,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 19,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "For SC-ST Students (Offered by Social Welfare Department)",
+        "char_count": 57
+      },
+      {
+        "para_index": 20,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Students through only CET are eligible.",
+        "char_count": 39
+      },
+      {
+        "para_index": 21,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Eligibility: The annual family income Rs.10,000 to 2.5 Lakhs.",
+        "char_count": 61
+      },
+      {
+        "para_index": 22,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get?: Yearly CET Tuition Fee only",
+        "char_count": 45
+      },
+      {
+        "para_index": 23,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 24,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 25,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "For SC-ST Students (Offered by Department of Technical Education)",
+        "char_count": 65
+      },
+      {
+        "para_index": 26,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Students through only CET are eligible.",
+        "char_count": 39
+      },
+      {
+        "para_index": 27,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Eligibility: The annual family income Rs.2.5 Lakhs to10 Lakhs",
+        "char_count": 61
+      },
+      {
+        "para_index": 28,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get?: CET Tuition fee of that academic year",
+        "char_count": 55
+      },
+      {
+        "para_index": 29,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "(E-attestation of parent’s salary certificate)",
+        "char_count": 46
+      },
+      {
+        "para_index": 30,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 31,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 32,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 33,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "National Scholarship Portal (NSP)",
+        "char_count": 33
+      },
+      {
+        "para_index": 34,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Scholarship for Minority students",
+        "char_count": 33
+      },
+      {
+        "para_index": 35,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "The annual family income must not exceed 1.5 lakhs.",
+        "char_count": 51
+      },
+      {
+        "para_index": 36,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get: Yearly Rs.50,000",
+        "char_count": 33
+      },
+      {
+        "para_index": 37,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply? : NSP portal: https://scholarships.gov.in/",
+        "char_count": 56
+      },
+      {
+        "para_index": 38,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 39,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 40,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Department of labour welfare",
+        "char_count": 28
+      },
+      {
+        "para_index": 41,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Applicable only for children of daily wages workers",
+        "char_count": 51
+      },
+      {
+        "para_index": 42,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "The annual family income must not exceed 01 lakh.",
+        "char_count": 49
+      },
+      {
+        "para_index": 43,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get: Yearly Rs.50,000 only",
+        "char_count": 38
+      },
+      {
+        "para_index": 44,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply?: ONLINE",
+        "char_count": 21
+      },
+      {
+        "para_index": 45,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 46,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 47,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Scholarship from Youth Empowerment and Sports Department",
+        "char_count": 56
+      },
+      {
+        "para_index": 48,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Only for students who represented in District/State Level Competitions",
+        "char_count": 70
+      },
+      {
+        "para_index": 49,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "The annual family income must not exceed 1.5 lakh.",
+        "char_count": 50
+      },
+      {
+        "para_index": 50,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get: Yearly Rs.25,000 only",
+        "char_count": 38
+      },
+      {
+        "para_index": 51,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply? : OFFLINE MODE",
+        "char_count": 28
+      },
+      {
+        "para_index": 52,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 53,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 54,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Department for the Empowerment of Differently Abled-Scholarship",
+        "char_count": 63
+      },
+      {
+        "para_index": 55,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "The annual income must not exceed 2.5 lakhs.",
+        "char_count": 44
+      },
+      {
+        "para_index": 56,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get: CET Tuition fee of each year.",
+        "char_count": 46
+      },
+      {
+        "para_index": 57,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply? : OFFLINE MODE",
+        "char_count": 28
+      },
+      {
+        "para_index": 58,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 59,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 60,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 61,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 62,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Scholarship for Children of Ex-Army Staffs",
+        "char_count": 42
+      },
+      {
+        "para_index": 63,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "No limit on annual income",
+        "char_count": 25
+      },
+      {
+        "para_index": 64,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get: Yearly Rs.15,000",
+        "char_count": 33
+      },
+      {
+        "para_index": 65,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply? : OFFLINE MODE",
+        "char_count": 28
+      },
+      {
+        "para_index": 66,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 67,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 68,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Scholarship from Department of Railways (only for children of railway department employees)",
+        "char_count": 91
+      },
+      {
+        "para_index": 69,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "No limit on annual income",
+        "char_count": 25
+      },
+      {
+        "para_index": 70,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get: Yearly Rs.20,000",
+        "char_count": 33
+      },
+      {
+        "para_index": 71,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply? : OFFLINE MODE",
+        "char_count": 28
+      },
+      {
+        "para_index": 72,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 73,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 74,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "KSRTC Employees Educational Fund.",
+        "char_count": 33
+      },
+      {
+        "para_index": 75,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get: Yearly Rs.10,000 only",
+        "char_count": 38
+      },
+      {
+        "para_index": 76,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply? : OFFLINE MODE",
+        "char_count": 28
+      },
+      {
+        "para_index": 77,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 78,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 79,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Scholarship from COFFEE Board, Bengaluru",
+        "char_count": 40
+      },
+      {
+        "para_index": 80,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Applicable only for children whose parents are working at any Coffee Curing Works",
+        "char_count": 81
+      },
+      {
+        "para_index": 81,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get: Yearly Rs.12,000 only",
+        "char_count": 38
+      },
+      {
+        "para_index": 82,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply? : ONLINE",
+        "char_count": 22
+      },
+      {
+        "para_index": 83,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 84,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 85,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Teachers Scholarship from Education Department",
+        "char_count": 46
+      },
+      {
+        "para_index": 86,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Only for students whose Parents are working Government Teachers",
+        "char_count": 63
+      },
+      {
+        "para_index": 87,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get: Yearly Rs.10,000 only",
+        "char_count": 38
+      },
+      {
+        "para_index": 88,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply?: OFFLINE MODE",
+        "char_count": 27
+      },
+      {
+        "para_index": 89,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 90,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 91,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Non-Government Scholarships",
+        "char_count": 27
+      },
+      {
+        "para_index": 92,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Sitaram Jindal Foundation Scholarship (Both CET and Management students)",
+        "char_count": 72
+      },
+      {
+        "para_index": 93,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "The annual family income must not exceed 2.5 lakhs.",
+        "char_count": 51
+      },
+      {
+        "para_index": 94,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get: Yearly Rs.30,000",
+        "char_count": 33
+      },
+      {
+        "para_index": 95,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply?: OFFLINE MODE & ONLINE",
+        "char_count": 36
+      },
+      {
+        "para_index": 96,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 97,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 98,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Scholarship from Dharamshala Rural Development Project (Sujnana Nidhi)",
+        "char_count": 70
+      },
+      {
+        "para_index": 99,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Applicable only for children of members of Sri Kshethra Dharmasthala Rural Development Project",
+        "char_count": 94
+      },
+      {
+        "para_index": 100,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "The annual family income must not exceed 1.5 lakhs.",
+        "char_count": 51
+      },
+      {
+        "para_index": 101,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get: Yearly Rs.11,000",
+        "char_count": 33
+      },
+      {
+        "para_index": 102,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply?: OFFLINE MODE",
+        "char_count": 27
+      },
+      {
+        "para_index": 103,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 104,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 105,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Scholarship from R L Jalappa Foundation. (applicable only for Veerashaiva Lingayat students)",
+        "char_count": 92
+      },
+      {
+        "para_index": 106,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "No limit on annual income",
+        "char_count": 25
+      },
+      {
+        "para_index": 107,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get: Yearly Rs.20,000",
+        "char_count": 33
+      },
+      {
+        "para_index": 108,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply?: OFFLINE MODE",
+        "char_count": 27
+      },
+      {
+        "para_index": 109,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 110,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 111,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Scholarship for Arya Vysya, Ediga and Arasu Community Students",
+        "char_count": 62
+      },
+      {
+        "para_index": 112,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "The annual family income must not exceed 1.5 lakh.",
+        "char_count": 50
+      },
+      {
+        "para_index": 113,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get: Yearly around Rs.20,000 only",
+        "char_count": 45
+      },
+      {
+        "para_index": 114,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply?: OFFLINE MODE",
+        "char_count": 27
+      },
+      {
+        "para_index": 115,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 116,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 117,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "Scholarship from Arihant Charitable Trust, Bengaluru",
+        "char_count": 52
+      },
+      {
+        "para_index": 118,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "The annual family income must not exceed 1.5 lakh.",
+        "char_count": 50
+      },
+      {
+        "para_index": 119,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "What do you get: Yearly Rs.25,000 only",
+        "char_count": 38
+      },
+      {
+        "para_index": 120,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "How to Apply?: OFFLINE MODE",
+        "char_count": 27
+      }
+    ],
+    "table_rows": []
+  },
+  {
+    "rel_path": "fees\\fees details.docx",
+    "doc_label": "Fees Details (DOCX)",
+    "file_type": "DOCX",
+    "expected": "EMPTY",
+    "full_path": "C:\\Users\\Admin\\Downloads\\campus-chatbot\\data\\fees\\fees details.docx",
+    "exists": true,
+    "status": "EMPTY",
+    "error": null,
+    "summary": {
+      "total_paragraphs": 2,
+      "non_empty_paragraphs": 0,
+      "total_table_rows": 0,
+      "total_chars": 0,
+      "headings_found": []
+    },
+    "pages": [],
+    "paragraphs": [
+      {
+        "para_index": 0,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 1,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      }
+    ],
+    "table_rows": []
+  },
+  {
+    "rel_path": "library\\library details.docx",
+    "doc_label": "Library Details (DOCX)",
+    "file_type": "DOCX",
+    "expected": "EMPTY",
+    "full_path": "C:\\Users\\Admin\\Downloads\\campus-chatbot\\data\\library\\library details.docx",
+    "exists": true,
+    "status": "EMPTY",
+    "error": null,
+    "summary": {
+      "total_paragraphs": 2,
+      "non_empty_paragraphs": 0,
+      "total_table_rows": 0,
+      "total_chars": 0,
+      "headings_found": []
+    },
+    "pages": [],
+    "paragraphs": [
+      {
+        "para_index": 0,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      },
+      {
+        "para_index": 1,
+        "style": "Normal",
+        "is_heading": false,
+        "section_label": null,
+        "text": "",
+        "char_count": 0
+      }
+    ],
+    "table_rows": []
+  }
+]
