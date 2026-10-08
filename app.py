@@ -7,6 +7,7 @@ from datetime import datetime
 import re
 import os
 
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///campus.db'
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
@@ -54,6 +55,8 @@ class UnansweredQuestion(db.Model):
     best_score = db.Column(db.Float)
     timestamp  = db.Column(db.DateTime, default=datetime.utcnow)
 
+import torch
+torch.set_num_threads(1)
 print("Loading AI model... please wait")
 model = SentenceTransformer(
     'paraphrase-multilingual-MiniLM-L12-v2',
