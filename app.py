@@ -55,7 +55,10 @@ class UnansweredQuestion(db.Model):
     timestamp  = db.Column(db.DateTime, default=datetime.utcnow)
 
 print("Loading AI model... please wait")
-model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+model = SentenceTransformer(
+    'paraphrase-multilingual-MiniLM-L12-v2',
+    device='cpu'
+)
 print("Model loaded!")
 
 # Document chunk loading deferred to after all functions are defined.
@@ -1454,7 +1457,11 @@ def _refresh_cache():
 
     questions = [r['question'] for r in rows]
     _faq_cache['rows']       = rows
-    _faq_cache['embeddings'] = model.encode(questions, convert_to_tensor=True)
+    _faq_cache['embeddings'] = model.encode(
+    questions,
+    convert_to_tensor=True,
+    device='cpu'
+)
     _faq_cache['count']      = live_count
 
 
@@ -1481,7 +1488,11 @@ def semantic_search(query: str, primary_intent: str, sub_intent: str):
     # equivalents so the multilingual model scores better FAQ matches.
     embedding_query = normalize_for_embedding(query)
 
-    user_emb = model.encode(embedding_query, convert_to_tensor=True)
+    user_emb = model.encode(
+    embedding_query,
+    convert_to_tensor=True,
+    device='cpu'
+)
 
     # ── Filtered search within category ──────────────────────────
     if primary_intent:
@@ -2510,7 +2521,7 @@ def clear_history():
         return jsonify({"status": "error", "detail": str(e)}), 500
 
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     with app.app_context():
         db.create_all()
     _load_doc_chunks()
