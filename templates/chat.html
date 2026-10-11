@@ -769,6 +769,7 @@ function speakVoiceAnswer(messageId, answer, speechLang) {
   utterance.lang = locale;
   try {
     window.speechSynthesis.speak(utterance);
+    console.log('[TTS] Speaking in', locale, '— first 60 chars:', answer.slice(0,60));
   } catch (_) {}
 }
 

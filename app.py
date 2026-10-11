@@ -10,7 +10,7 @@ import os
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///campus.db'
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY') or 'campus-chatbot-local-secret-2026'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # Keep the SQLite connection alive across requests and allow reuse
 app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
@@ -1461,10 +1461,9 @@ def _refresh_cache():
     questions = [r['question'] for r in rows]
     _faq_cache['rows']       = rows
     _faq_cache['embeddings'] = model.encode(
-    questions,
-    convert_to_tensor=True,
-    device='cpu'
-)
+        questions,
+        convert_to_tensor=True,
+    )
     _faq_cache['count']      = live_count
 
 
@@ -1492,10 +1491,9 @@ def semantic_search(query: str, primary_intent: str, sub_intent: str):
     embedding_query = normalize_for_embedding(query)
 
     user_emb = model.encode(
-    embedding_query,
-    convert_to_tensor=True,
-    device='cpu'
-)
+        embedding_query,
+        convert_to_tensor=True,
+    )
 
     # ── Filtered search within category ──────────────────────────
     if primary_intent:
@@ -1654,6 +1652,13 @@ _EVIDENCE_EQUIVALENTS = {
     'sitaram':      {'sitaram jindal', 'jindal'},
     'principal':    {'principal', 'head of institution'},
     'programming':  {'programming', 'program', 'lab', 'c program'},
+    'library':      {'library', 'information centre', 'lib'},
+    'borrow':       {'borrow', 'loan', 'issue', 'privilege', 'privileges', 'take', 'card'},
+    'seating':      {'seating', 'seats', 'capacity', 'sitting'},
+    'computers':    {'computer', 'computers', 'pc', 'pcs'},
+    'consortium':   {'consortium', 'e-journals', 'e-books', 'database'},
+    'periodicals':  {'periodicals', 'journal', 'journals', 'magazines', 'cds', 'dvd'},
+    'software':     {'software', 'libsoft', 'ddc', 'dewey', 'cataloguing', 'aacr'},
 }
 
 _EVIDENCE_STOP = {
@@ -1785,6 +1790,24 @@ def evidence_check(query: str, chunk: dict) -> bool:
           'dept head', 'head of cse', 'head of ece', 'head of ise',
           'who is the head', 'head of the'],
          ['head', 'hod', 'professor & head', '& head']),
+        # Library: Borrowing / Loan period / Membership Privileges
+        (['borrow', 'loan period', 'book limit', 'how many books', 'sc-st category',
+          'eshtu books', 'kitne books', 'kitni books', 'books borrow'],
+         ['privileges', 'membership', 'loan period', 'number of books']),
+        # Library: Facilities / Seating / PCs / Periodicals
+        (['seating capacity', 'how many pc', 'how many computer', 'computers or pcs',
+          'newspapers', 'periodicals', 'national journals', 'magazines'],
+         ['facilities', 'seating capacity', 'periodicals', 'journals']),
+        # Library: Collection / Titles / Volumes
+        (['collection', 'titles and volumes', 'cse library', 'branch breakdown'],
+         ['collection details', 'titles', 'volumes']),
+        # Library: VTU Consortium / E-Resources
+        (['vtu consortium', 'consortium', 'e-journals', 'e-books'],
+         ['consortium', 'e-journals', 'e-books']),
+        # Library: Systems & Software
+        (['libsoft', 'ddc', 'dewey decimal', 'aacr', 'library software',
+          'management system', 'cataloguing system', 'classification system'],
+         ['systems and software', 'libsoft', 'classification', 'cataloguing', 'system used']),
     ]
 
     # Check if the query names ANY specific scheme
@@ -2065,6 +2088,23 @@ def _query_is_specific(query: str) -> bool:
                              'dept head', 'head of dept',
                              'head of cse', 'who is the head',
                              'head of the department']):
+        return True
+    # Specific library details
+    specific_library = [
+        'borrow', 'loan period', 'how many books', 'book limit',
+        'sc-st category', 'sc/st category', 'sc-st students', 'sc st students',
+        'teaching faculty', 'non-teaching faculty', 'research scholar',
+        'seating capacity', 'how many pc', 'how many computer',
+        'computers in library', 'pcs in library',
+        'national journals', 'periodicals', 'magazines',
+        'library collection', 'collection details', 'vtu consortium',
+        'e-journals', 'e-books', 'libsoft', 'ddc', 'dewey decimal',
+        'aacr', 'library software', 'management system', 'software used',
+        'eshtu books', 'kitni books', 'kitne books', 'books borrow',
+        'library facilities', 'library facility', 'titles', 'volumes',
+        'cse library', 'department library', 'library books', 'book collection'
+    ]
+    if any(s in q for s in specific_library):
         return True
     return False
 

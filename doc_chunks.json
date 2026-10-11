@@ -452,5 +452,65 @@
     "text": "18.  Mrs. Archana J B Asst. Professor --------------------",
     "char_count": 58,
     "content_flags": []
+  },
+  {
+    "chunk_id": "library_docx_000",
+    "source_file": "library/library details.docx",
+    "doc_label": "Library Details (DOCX)",
+    "file_type": "DOCX",
+    "page": null,
+    "section": "Categories of Membership & their Privileges",
+    "chunk_index": 0,
+    "text": "RAJEEV INSTITUTE OF TECHNOLOGY\nDepartment of Library & Information Centre\nCategories of Membership & their Privileges (Book Borrowing Limits and Loan Periods):\n\nSl.No | Category of Users | Number of Books | Loan Period\n1 | Students (General): 4 Books | 15 Days loan period\n2 | SC-ST Category Students: 5 Books | 30 Days loan period\n3 | Teaching Faculty (Library Membership): 8 Books | 90 Days loan period - loan period for teaching faculty is 90 Days\n4 | Non-Teaching Faculty: 5 Books | 45 Days loan period\n5 | Research Scholar: 4 Books | 30 Days loan period",
+    "char_count": 558,
+    "content_flags": []
+  },
+  {
+    "chunk_id": "library_docx_001",
+    "source_file": "library/library details.docx",
+    "doc_label": "Library Details (DOCX)",
+    "file_type": "DOCX",
+    "page": null,
+    "section": "Library Facilities and Periodicals",
+    "chunk_index": 1,
+    "text": "RAJEEV INSTITUTE OF TECHNOLOGY\nDepartment of Library & Information Centre\nFacilities:\n- Seating Capacity: 78\n- Number of PCs (Computers): 12\n- Newspapers: 8\n\nPeriodicals:\n- National Journals: 63\n- Magazines: 7\n- DCD/CD's: 982",
+    "char_count": 225,
+    "content_flags": []
+  },
+  {
+    "chunk_id": "library_docx_002",
+    "source_file": "library/library details.docx",
+    "doc_label": "Library Details (DOCX)",
+    "file_type": "DOCX",
+    "page": null,
+    "section": "Library Collection Details",
+    "chunk_index": 2,
+    "text": "RAJEEV INSTITUTE OF TECHNOLOGY\nDepartment of Library & Information Centre\nLibrary Collection Details (Under Graduation and Post Graduation Titles and Volumes):\n\nUnder Graduation (UG):\n- Total Titles: 5,015\n- Total Volumes: 19,200\nDepartment / Branch breakdown:\n- Dept. of Computer Science: 1,166 Titles, 3,715 Volumes\n- Dept. of Mechanical Engineering: 662 Titles, 2,695 Volumes\n- Dept. of Electronics & Communication: 705 Titles, 2,731 Volumes\n- Dept. of Electrical & Electronics: 592 Titles, 2,255 Volumes\n- Dept. of Civil Engineering: 451 Titles, 2,744 Volumes\n- Dept. of Information Science Engineering: 780 Titles, 2,256 Volumes\n- Electronics Engineering (VLSI Design & Technology): 106 Titles, 524 Volumes\n- Computer Science (Artificial intelligence & Machine Learning): 126 Titles, 826 Volumes\n- Basic Science & Humanities: 326 Titles, 1,021 Volumes\n- Artificial Intelligence & Data Science: 101 Titles, 433 Volumes\n\nPost Graduation (PG):\n- Total Titles: 2,427\n- Total Volumes: 7,150\n- M.Tech. (Computer Science & Engineering): 99 Titles, 510 Volumes\n- Department of MBA: 2,328 Titles, 6,640 Volumes\n\nTotal No. of Titles: 31,985 (including 26,970 e-books)\nTotal No. of Volumes: 46,170 (including 26,970 e-books)",
+    "char_count": 1218,
+    "content_flags": []
+  },
+  {
+    "chunk_id": "library_docx_003",
+    "source_file": "library/library details.docx",
+    "doc_label": "Library Details (DOCX)",
+    "file_type": "DOCX",
+    "page": null,
+    "section": "VTU Library Consortium",
+    "chunk_index": 3,
+    "text": "RAJEEV INSTITUTE OF TECHNOLOGY\nDepartment of Library & Information Centre\nVTU Library Consortium:\n- Database (E-Journals): 12 databases [12,508 e-journals]\n- E-Books: 26,970 e-books",
+    "char_count": 181,
+    "content_flags": []
+  },
+  {
+    "chunk_id": "library_docx_004",
+    "source_file": "library/library details.docx",
+    "doc_label": "Library Details (DOCX)",
+    "file_type": "DOCX",
+    "page": null,
+    "section": "Library Systems and Software Used",
+    "chunk_index": 4,
+    "text": "RAJEEV INSTITUTE OF TECHNOLOGY\nDepartment of Library & Information Centre\nLibrary Systems and Software Used:\n- Information Management Software: Libsoft (12.0) with Barcode\n- Classification: Dewey Decimal Classification (DDC)\n- Cataloguing: Anglo American Cataloguing Rules (AACR-2)",
+    "char_count": 281,
+    "content_flags": []
   }
 ]
